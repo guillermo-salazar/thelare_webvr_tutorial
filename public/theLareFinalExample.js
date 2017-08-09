@@ -1,7 +1,7 @@
 var vrHomePage = vRViewPlayer('#vr-jesus-room', {
   image: 'assets/jesus-room.jpg',
   preview: 'assets/jesus-room.jpg',
-  // image: 'https://raw.githubusercontent.com/jsala1990/thelare_webvr_tutorial/master/public/assets/jesus-room.jpg',
+  // image: 'http://raw.githubusercontent.com/jsala1990/thelare_webvr_tutorial/master/public/assets/jesus-room.jpg',
   is_stereo: false,
 });
 
@@ -56,7 +56,8 @@ var setReadyEvents = function(event) {
 
 var setOnClickEvents = function(event) {
   if (event.id == 'reading-spot') {
-    popUpEvent('I love to read about bada** women!');
+    document.activeElement.className = "modal";
+    // popUpEvent('I love to read about bada** women!');
   }
 
   if (event.id == 'self-reflect') {
