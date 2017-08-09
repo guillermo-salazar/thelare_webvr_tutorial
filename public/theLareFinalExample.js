@@ -56,8 +56,7 @@ var setReadyEvents = function(event) {
 
 var setOnClickEvents = function(event) {
   if (event.id == 'reading-spot') {
-    document.activeElement.className = "modal";
-    // popUpEvent('I love to read about bada** women!');
+    popUpEvent('I love to read about bada** women!');
   }
 
   if (event.id == 'self-reflect') {
